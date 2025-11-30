@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import BentoGrid from "./BentoGrid";
 import SectionTransition from "./SectionTransition";
 import LiquidDistortImage from "./LiquidDistortImage";
-import servicesTechImg from "@/assets/placeholder.png";
+import servicesTechImg from "@/assets/caregiver-children-learning.jpg";
 
 const BentoServicesSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -53,11 +53,11 @@ const BentoServicesSection = () => {
         </SectionTransition>
 
         {/* Liquid Distort Image */}
-        <div className="mb-16">
+        <div className="mb-12 md:mb-16 px-4">
           <LiquidDistortImage 
             src={servicesTechImg}
             alt="Digital Services Visualization"
-            className="max-w-2xl mx-auto h-96"
+            className="max-w-2xl mx-auto h-64 md:h-96"
           />
         </div>
 
